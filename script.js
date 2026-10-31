@@ -1,5 +1,5 @@
-const menuToggle = document.querySelector(".menu-toggle");
 const siteHeader = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = siteHeader.classList.toggle("nav-open");
@@ -18,6 +18,6 @@ document.querySelectorAll(".faq-question").forEach((question) => {
     const item = question.closest(".faq-item");
     const isOpen = item.classList.toggle("open");
     question.setAttribute("aria-expanded", String(isOpen));
-    question.querySelector("span").textContent = isOpen ? "−" : "+";
+    question.querySelector("b").textContent = isOpen ? "−" : "+";
   });
 });

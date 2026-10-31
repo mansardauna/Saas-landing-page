@@ -3,144 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kivo is the operating system for modern product teams." />
-    <title>Kivo — Move ideas forward</title>
+    <meta
+      name="description"
+      content="Luma helps ambitious teams turn promising ideas into products people love."
+    />
+    <title>Luma — Make what's next</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <!-- top navigation -->
       <header class="site-header">
-        <a class="brand" href="#" aria-label="Kivo home">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>Kivo</span>
-        </a>
+        <a class="brand" href="#" aria-label="Luma home"><span class="brand-mark">✦</span> luma</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span>
           <span class="sr-only">Toggle navigation</span>
         </button>
-        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
           <a href="#product">Product</a>
           <a href="#solutions">Solutions</a>
           <a href="#pricing">Pricing</a>
-          <a href="#resources">Resources</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <div class="header-actions">
           <a class="login-link" href="#">Log in</a>
-          <a class="button button-small button-light" href="#pricing">Start free</a>
+          <a class="button button-dark button-small" href="#cta">Start for free <span>↗</span></a>
         </div>
       </header>
 
       <main>
-        <!-- Hero -->
-        <section class="hero section-wrap">
+        <section class="hero section-wrap" id="product">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> The modern way to work</p>
-            <h1>Make space for<br /><em>great work.</em></h1>
-            <p class="hero-description">Kivo gives ambitious teams one calm, connected place to plan, build, and ship their best ideas.</p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> The operating system for modern teams</p>
+            <h1>Make what's next.<br /><em>Together.</em></h1>
+            <p class="hero-text">
+              Luma brings your people, projects, and progress into one calm, connected workspace.
+              Less busywork. More of your best work.
+            </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#pricing">Get started free <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="#product">See how it works <span aria-hidden="true">↓</span></a>
+              <a class="button button-primary" href="#cta">Get started free <span>↗</span></a>
+              <a class="text-link" href="#solutions">See how it works <span>→</span></a>
             </div>
-            <div class="hero-proof">
-              <div class="avatar-stack" aria-hidden="true">
-                <span>J</span><span>M</span><span>S</span><span>+</span>
-              </div>
-              <p>Trusted by <strong>4,000+</strong> forward-thinking teams</p>
-            </div>
+            <p class="micro-copy"><span>✦</span> No credit card required &nbsp;·&nbsp; Set up in 2 minutes</p>
           </div>
-          <div class="hero-visual" aria-label="Kivo workspace preview">
-            <div class="glow"></div>
+          <div class="hero-art" aria-label="A preview of a Luma workspace">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="floating-card card-top"><span class="card-icon purple">◒</span><strong>Launch plan</strong><small>On track · 87%</small></div>
             <div class="workspace-card">
-              <div class="workspace-topbar">
-                <div class="workspace-brand"><span class="mini-mark"></span> Kivo <small>/ Acme</small></div>
-                <div class="topbar-actions"><span class="status-dot"></span> Live <span class="circle-avatar">A</span></div>
-              </div>
+              <div class="workspace-top"><span class="window-dots">● ● ●</span><span>Q3 / PRODUCT</span><span>•••</span></div>
               <div class="workspace-body">
-                <aside class="workspace-sidebar">
-                  <p class="sidebar-label">Workspace</p>
-                  <div class="side-item active">▦ <span>Overview</span></div>
-                  <div class="side-item">◒ <span>Projects</span><b>6</b></div>
-                  <div class="side-item">□ <span>Inbox</span><b class="pink-count">3</b></div>
-                  <p class="sidebar-label side-label-space">Your teams</p>
-                  <div class="team-item"><span class="team-dot purple"></span> Design</div>
-                  <div class="team-item"><span class="team-dot orange"></span> Engineering</div>
-                  <div class="team-item"><span class="team-dot blue"></span> Marketing</div>
-                </aside>
-                <div class="dashboard">
-                  <div class="dashboard-heading">
-                    <div><p class="dashboard-kicker">Tuesday, October 24</p><h2>Good morning, Alex <span>✦</span></h2></div>
-                    <button class="add-button">+ New task</button>
-                  </div>
-                  <div class="metrics-row">
-                    <div class="metric-card"><span>Active projects</span><strong>12</strong><small class="positive">+ 18.2%</small></div>
-                    <div class="metric-card"><span>Tasks completed</span><strong>86</strong><small class="positive">+ 24.5%</small></div>
-                    <div class="metric-card"><span>Team pulse</span><strong>94<span class="unit">%</span></strong><small class="positive">+ 6.4%</small></div>
-                  </div>
-                  <div class="dashboard-lower">
-                    <div class="progress-card">
-                      <div class="card-title"><strong>Project progress</strong><span>View all ↗</span></div>
-                      <div class="project-line"><div class="project-label"><span class="project-icon purple-bg">✦</span><span>Website redesign</span><b>82%</b></div><div class="progress-track"><i style="width:82%"></i></div></div>
-                      <div class="project-line"><div class="project-label"><span class="project-icon orange-bg">◈</span><span>Q4 campaign</span><b>64%</b></div><div class="progress-track"><i class="orange-progress" style="width:64%"></i></div></div>
-                      <div class="project-line"><div class="project-label"><span class="project-icon blue-bg">◉</span><span>Mobile app v2</span><b>41%</b></div><div class="progress-track"><i class="blue-progress" style="width:41%"></i></div></div>
-                    </div>
-                    <div class="activity-card">
-                      <div class="card-title"><strong>Recent activity</strong><span>•••</span></div>
-                      <div class="activity"><span class="activity-avatar green-avatar">M</span><p><b>Maya</b> completed a task<small>2 min ago</small></p></div>
-                      <div class="activity"><span class="activity-avatar yellow-avatar">J</span><p><b>Jordan</b> left a comment<small>18 min ago</small></p></div>
-                    </div>
-                  </div>
-                </div>
+                <div class="workspace-sidebar"><span class="side-logo">✦</span><span class="side-line active"></span><span class="side-line"></span><span class="side-line"></span><span class="side-line short"></span><span class="side-avatar"></span></div>
+                <div class="workspace-main"><p class="mini-label">THURSDAY, SEPTEMBER 12</p><h3>Good morning, Maya <span>✦</span></h3><div class="progress-row"><span>Launch week</span><b>72%</b></div><div class="progress"><i></i></div><div class="task-grid"><div><span class="task-dot peach"></span><b>Finalize onboarding</b><small>Today · 3 tasks</small></div><div><span class="task-dot green"></span><b>Design review</b><small>Tomorrow · 5 tasks</small></div><div><span class="task-dot purple"></span><b>Ship v2.4</b><small>Friday · 8 tasks</small></div></div></div>
               </div>
             </div>
+            <div class="floating-card card-bottom"><span class="avatar-stack">● ●</span><strong>Team sync</strong><small>Just now · 12 comments</small></div>
           </div>
         </section>
-        <!-- partner -->
-        <section class="logo-strip section-wrap" aria-label="Companies using Kivo">
-          <span>LOVED BY TEAMS AT</span><strong>northstar</strong><strong>ARROW</strong><strong class="serif-logo">Canyon</strong><strong>parker</strong><strong class="mono-logo">/ BRIGHT</strong>
+
+        <section class="trust section-wrap">
+          <p>Trusted by teams who are building the future</p>
+          <div class="logo-row"><span>◎ vertex</span><span>◈ northstar</span><span>◒ loom</span><span>✣ arc</span><span>△ pixelgrade</span></div>
         </section>
-        <!-- service -->
-        <section id="product" class="features section-wrap">
-          <div class="section-intro">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> One place. Every possibility.</p>
-            <h2>Everything you need<br />to move <em>forward.</em></h2>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card feature-wide dark-card">
-              <div class="feature-content"><span class="feature-number">01</span><h3>Bring clarity<br />to the chaos.</h3><p>Turn scattered thoughts into a clear path forward. Kivo keeps your projects, conversations, and priorities beautifully in sync.</p><a class="arrow-link" href="#">Explore workspace <span>↗</span></a></div>
-              <div class="kanban-art" aria-hidden="true"><div class="kanban-title">Sprint 24 <span>•••</span></div><div class="kan-columns"><div><small>TO DO <b>3</b></small><i>Finalize brief</i><i>Share wireframes</i></div><div><small>IN PROGRESS <b>2</b></small><i class="highlight">Homepage concepts</i><i>Design system</i></div><div><small>DONE <b>5</b></small><i>Research notes</i><i>Project kickoff</i></div></div></div>
-            </article>
-            <article id="solutions" class="feature-card lavender-card"><span class="feature-number">02</span><h3>Built for<br /><em>momentum.</em></h3><p>From first spark to final launch, keep everyone moving in the same direction.</p><div class="orbit-art" aria-hidden="true"><span class="orbit-center">✦</span><span class="orbit-node node-a">✎</span><span class="orbit-node node-b">↗</span><span class="orbit-node node-c">✓</span></div></article>
-            <article class="feature-card peach-card"><span class="feature-number">03</span><h3>Work that feels<br /><em>human.</em></h3><p>Less noise. More focus. A workspace your team will actually want to use.</p><div class="quote-art" aria-hidden="true"><span>“</span><p>Great things<br />happen when<br />we work together.</p></div></article>
-          </div>
+
+        <section class="section-wrap intro-section" id="solutions">
+          <div class="section-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Built for momentum</p><h2>One place for your<br /><em>best thinking.</em></h2></div>
+          <p class="section-lead">From first spark to final launch, Luma gives every team the clarity to move with confidence.</p>
         </section>
-        <!-- Pricing -->
-        <section id="pricing" class="pricing section-wrap">
-          <div class="section-intro centered"><p class="eyebrow"><span class="eyebrow-dot"></span> Simple, transparent pricing</p><h2>Plans that grow<br />with <em>you.</em></h2><p>Start for free, then choose the plan that fits your ambition.</p></div>
+
+        <section class="feature-grid section-wrap">
+          <article class="feature-card feature-large lilac"><span class="feature-number">01</span><div><h3>Ideas that<br />go somewhere.</h3><p>Capture the sparks, shape the strategy, and bring your whole team along for the ride.</p><a class="arrow-link" href="#cta">Explore spaces <span>↗</span></a></div><div class="idea-orb">✦</div></article>
+          <article class="feature-card mint"><span class="feature-number">02</span><div><h3>Progress<br />you can see.</h3><p>Turn plans into momentum with a clear view of every project and priority.</p><a class="arrow-link" href="#cta">Explore projects <span>↗</span></a></div><div class="chart-art"><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="feature-card peach"><span class="feature-number">03</span><div><h3>People in<br />their flow.</h3><p>Make collaboration feel natural, whether you're in the same room or across the world.</p><a class="arrow-link" href="#cta">Explore teamwork <span>↗</span></a></div><div class="people-art">●　●<br /><small>↗　✦</small></div></article>
+        </section>
+
+        <section class="pricing section-wrap" id="pricing">
+          <div class="section-heading centered"><p class="eyebrow"><span class="eyebrow-dot"></span> Simple, by design</p><h2>Plans that grow<br /><em>with you.</em></h2><p class="section-lead">Start small, dream big, and switch plans whenever you need to.</p></div>
           <div class="pricing-grid">
-            <article class="price-card"><p class="plan-name">Starter</p><p class="plan-description">For small teams getting started.</p><div class="price">$0 <small>/ forever</small></div><a class="button button-outline" href="#">Start for free</a><ul><li>Up to 5 members</li><li>Unlimited projects</li><li>Basic task views</li><li>7-day history</li></ul></article>
-            <article class="price-card popular"><span class="popular-badge">Most popular</span><p class="plan-name">Growth</p><p class="plan-description">For teams ready to do their best work.</p><div class="price">$12 <small>/ member / month</small></div><a class="button button-primary full-button" href="#">Start 14-day trial <span>↗</span></a><ul><li>Unlimited members</li><li>Advanced project views</li><li>Automations & integrations</li><li>Unlimited history</li></ul></article>
-            <article class="price-card"><p class="plan-name">Scale</p><p class="plan-description">For organizations moving at speed.</p><div class="price">Let's talk</div><a class="button button-outline" href="#">Contact sales</a><ul><li>Everything in Growth</li><li>Custom permissions</li><li>Dedicated support</li><li>Advanced security</li></ul></article>
+            <article class="price-card"><p class="plan-name">Solo</p><h3>For the self-starter.</h3><p class="price"><strong>$0</strong> / forever</p><a class="button button-outline" href="#cta">Get started <span>↗</span></a><ul><li>1 workspace</li><li>Unlimited projects</li><li>Core collaboration tools</li></ul></article>
+            <article class="price-card featured"><span class="popular">Most popular</span><p class="plan-name">Studio</p><h3>For teams in motion.</h3><p class="price"><strong>$12</strong> / user / month</p><a class="button button-dark" href="#cta">Start free trial <span>↗</span></a><ul><li>Unlimited workspaces</li><li>Advanced project views</li><li>Guest access & permissions</li><li>Priority support</li></ul></article>
+            <article class="price-card"><p class="plan-name">Scale</p><h3>For teams going further.</h3><p class="price"><strong>Let's talk</strong></p><a class="button button-outline" href="#cta">Contact us <span>↗</span></a><ul><li>Everything in Studio</li><li>Custom workflows</li><li>Dedicated success manager</li></ul></article>
           </div>
         </section>
-        <!-- FAQ -->
-        <section id="resources" class="faq section-wrap">
-          <div class="faq-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Got questions?</p><h2>We have<br /><em>answers.</em></h2><p>Can’t find what you’re looking for? <a href="#">Talk to our team ↗</a></p></div>
+
+        <section class="faq section-wrap" id="faq">
+          <div class="faq-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> Good to know</p><h2>Questions,<br /><em>answered.</em></h2><p>Can't find what you're looking for? <a href="mailto:hello@luma.work">Say hello →</a></p></div>
           <div class="faq-list">
-            <div class="faq-item open"><button class="faq-question" aria-expanded="true">What is Kivo? <span>−</span></button><div class="faq-answer"><p>Kivo is a connected workspace that brings project planning, team communication, and your most important work into one calm, focused place.</p></div></div>
-            <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I try Kivo for free? <span>+</span></button><div class="faq-answer"><p>Absolutely. Every team can use Kivo's Starter plan for free, and Growth includes a 14-day trial with no credit card required.</p></div></div>
-            <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I invite my whole team? <span>+</span></button><div class="faq-answer"><p>Yes. Invite as many teammates as you like and choose the plan that matches the way your team works.</p></div></div>
-            <div class="faq-item"><button class="faq-question" aria-expanded="false">Does Kivo integrate with my tools? <span>+</span></button><div class="faq-answer"><p>Kivo connects with the tools your team already uses, including Slack, Google Drive, GitHub, and more.</p></div></div>
+            <div class="faq-item open"><button class="faq-question" type="button" aria-expanded="true"><span>What is Luma?</span><b>−</b></button><div class="faq-answer"><p>Luma is a connected workspace for modern teams. It brings projects, docs, conversations, and decisions together so your team can focus on the work that matters.</p></div></div>
+            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>How long is the free trial?</span><b>+</b></button><div class="faq-answer"><p>Every Studio workspace starts with a 14-day free trial. No credit card is needed, and you can invite your team from day one.</p></div></div>
+            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Can I change my plan later?</span><b>+</b></button><div class="faq-answer"><p>Absolutely. Upgrade, downgrade, or cancel at any time from your workspace settings. Changes take effect on your next billing cycle.</p></div></div>
+            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Where does Luma work?</span><b>+</b></button><div class="faq-answer"><p>Luma works in your browser on any device. Native desktop and mobile apps are coming soon.</p></div></div>
           </div>
         </section>
-        <!-- Final CTA -->
-        <section class="final-cta section-wrap"><div class="cta-orb orb-one"></div><div class="cta-orb orb-two"></div><p class="eyebrow"><span class="eyebrow-dot"></span> Your best work is waiting</p><h2>Ready to make<br /><em>space?</em></h2><p>Join thousands of teams doing meaningful work with Kivo.</p><a class="button button-light" href="#pricing">Get started free <span>↗</span></a></section>
+
+        <section class="cta section-wrap" id="cta"><div class="cta-inner"><div><p class="eyebrow"><span class="eyebrow-dot"></span> Your next chapter starts here</p><h2>Ready to make<br /><em>something great?</em></h2></div><a class="button button-dark" href="mailto:hello@luma.work">Start for free <span>↗</span></a><div class="cta-star">✦</div></div></section>
       </main>
-      <!-- footer -->
-      <footer class="site-footer section-wrap"><div class="footer-top"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Kivo</span></a><p>A calmer way to work.</p><div class="social-links"><a href="#" aria-label="Twitter">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Instagram">◎</a></div></div><div class="footer-bottom"><span>© 2024 Kivo, Inc.</span><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Status <i class="status-dot"></i></a></div><span>Made for momentum <b>✦</b></span></div></footer>
+
+      <footer class="site-footer section-wrap"><a class="brand" href="#"><span class="brand-mark">✦</span> luma</a><p>Tools for teams with something to say.</p><div class="footer-links"><a href="#product">Product</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#">Privacy</a></div><small>© 2024 Luma, Inc.</small></footer>
     </div>
     <script src="script.js"></script>
   </body>
