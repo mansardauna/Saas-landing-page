@@ -3,109 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Luma helps ambitious teams turn promising ideas into products people love."
-    />
-    <title>Luma — Make what's next</title>
+    <meta name="description" content="NOVA helps ambitious teams turn bold ideas into lasting momentum." />
+    <title>NOVA — Make momentum your advantage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#" aria-label="Luma home"><span class="brand-mark">✦</span> luma</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+    <!-- top navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="NOVA home"><span class="brand-mark">✦</span>NOVA</a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
           <span></span><span></span>
-          <span class="sr-only">Toggle navigation</span>
         </button>
-        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-          <a href="#product">Product</a>
-          <a href="#solutions">Solutions</a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
-        </nav>
-        <div class="header-actions">
-          <a class="login-link" href="#">Log in</a>
-          <a class="button button-dark button-small" href="#cta">Start for free <span>↗</span></a>
+          <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
         </div>
-      </header>
+      </nav>
+    </header>
 
-      <main>
-        <section class="hero section-wrap" id="product">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> The operating system for modern teams</p>
-            <h1>Make what's next.<br /><em>Together.</em></h1>
-            <p class="hero-text">
-              Luma brings your people, projects, and progress into one calm, connected workspace.
-              Less busywork. More of your best work.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#cta">Get started free <span>↗</span></a>
-              <a class="text-link" href="#solutions">See how it works <span>→</span></a>
-            </div>
-            <p class="micro-copy"><span>✦</span> No credit card required &nbsp;·&nbsp; Set up in 2 minutes</p>
+    <main id="top">
+        <!-- Hero section -->
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> The unfair advantage for ambitious teams</p>
+          <h1>Make momentum<br /><em>your advantage.</em></h1>
+          <p class="hero-text">We help ambitious brands find their edge, build with clarity, and move from good to impossible to ignore.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Start a project <span>↗</span></a>
+            <a class="text-link" href="#services">Explore what we do <span>↓</span></a>
           </div>
-          <div class="hero-art" aria-label="A preview of a Luma workspace">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="floating-card card-top"><span class="card-icon purple">◒</span><strong>Launch plan</strong><small>On track · 87%</small></div>
-            <div class="workspace-card">
-              <div class="workspace-top"><span class="window-dots">● ● ●</span><span>Q3 / PRODUCT</span><span>•••</span></div>
-              <div class="workspace-body">
-                <div class="workspace-sidebar"><span class="side-logo">✦</span><span class="side-line active"></span><span class="side-line"></span><span class="side-line"></span><span class="side-line short"></span><span class="side-avatar"></span></div>
-                <div class="workspace-main"><p class="mini-label">THURSDAY, SEPTEMBER 12</p><h3>Good morning, Maya <span>✦</span></h3><div class="progress-row"><span>Launch week</span><b>72%</b></div><div class="progress"><i></i></div><div class="task-grid"><div><span class="task-dot peach"></span><b>Finalize onboarding</b><small>Today · 3 tasks</small></div><div><span class="task-dot green"></span><b>Design review</b><small>Tomorrow · 5 tasks</small></div><div><span class="task-dot purple"></span><b>Ship v2.4</b><small>Friday · 8 tasks</small></div></div></div>
-              </div>
-            </div>
-            <div class="floating-card card-bottom"><span class="avatar-stack">● ●</span><strong>Team sync</strong><small>Just now · 12 comments</small></div>
-          </div>
-        </section>
+        </div>
+        <div class="hero-art" aria-label="Abstract illustration of growing momentum">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="spark spark-a">✦</div><div class="spark spark-b">✦</div><div class="spark spark-c">✦</div>
+          <div class="hero-ball"><span>n</span></div>
+          <div class="art-caption"><span>01</span><span>Find your edge</span></div>
+        </div>
+      </section>
 
-        <section class="trust section-wrap">
-          <p>Trusted by teams who are building the future</p>
-          <div class="logo-row"><span>◎ vertex</span><span>◈ northstar</span><span>◒ loom</span><span>✣ arc</span><span>△ pixelgrade</span></div>
-        </section>
+      <!-- Partner brands -->
+      <section class="partner-bar container" aria-label="Partner brands">
+        <p>Trusted by teams at</p>
+        <div class="partner-logos">
+          <span>◈ northstar</span><span class="logo-word">vertex</span><span>✣ arc</span><span class="logo-word">LUMA</span><span>◌ signal</span>
+        </div>
+      </section>
 
-        <section class="section-wrap intro-section" id="solutions">
-          <div class="section-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Built for momentum</p><h2>One place for your<br /><em>best thinking.</em></h2></div>
-          <p class="section-lead">From first spark to final launch, Luma gives every team the clarity to move with confidence.</p>
-        </section>
+      <!-- Services -->
+      <section class="services section container" id="services">
+        <div class="section-intro">
+          <p class="eyebrow">What we do <span>↘</span></p>
+          <h2>Built for the<br /><em>next chapter.</em></h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card featured">
+            <div class="card-icon">◒</div><span class="card-number">01</span>
+            <h3>Brand<br />strategy</h3>
+            <p>Clarity that cuts through the noise. We find the idea that makes your brand impossible to forget.</p>
+            <a class="card-link" href="#contact">Learn more <span>↗</span></a>
+          </article>
+          <article class="service-card">
+            <div class="card-icon">⌁</div><span class="card-number">02</span>
+            <h3>Digital<br />experiences</h3>
+            <p>Digital products that feel as good as they function — designed to turn curious visitors into loyal fans.</p>
+            <a class="card-link" href="#contact">Learn more <span>↗</span></a>
+          </article>
+          <article class="service-card">
+            <div class="card-icon">✳</div><span class="card-number">03</span>
+            <h3>Growth<br />systems</h3>
+            <p>Smart, repeatable systems that help you scale what works without losing what makes you, you.</p>
+            <a class="card-link" href="#contact">Learn more <span>↗</span></a>
+          </article>
+        </div>
+      </section>
 
-        <section class="feature-grid section-wrap">
-          <article class="feature-card feature-large lilac"><span class="feature-number">01</span><div><h3>Ideas that<br />go somewhere.</h3><p>Capture the sparks, shape the strategy, and bring your whole team along for the ride.</p><a class="arrow-link" href="#cta">Explore spaces <span>↗</span></a></div><div class="idea-orb">✦</div></article>
-          <article class="feature-card mint"><span class="feature-number">02</span><div><h3>Progress<br />you can see.</h3><p>Turn plans into momentum with a clear view of every project and priority.</p><a class="arrow-link" href="#cta">Explore projects <span>↗</span></a></div><div class="chart-art"><i></i><i></i><i></i><i></i><i></i></div></article>
-          <article class="feature-card peach"><span class="feature-number">03</span><div><h3>People in<br />their flow.</h3><p>Make collaboration feel natural, whether you're in the same room or across the world.</p><a class="arrow-link" href="#cta">Explore teamwork <span>↗</span></a></div><div class="people-art">●　●<br /><small>↗　✦</small></div></article>
-        </section>
+      <!-- Marquee section -->
+      <section class="marquee" aria-label="NOVA values">
+        <div class="marquee-track"><span>MAKE IT MATTER</span><b>✦</b><span>MOVE WITH INTENT</span><b>✦</b><span>MAKE IT MATTER</span><b>✦</b><span>MOVE WITH INTENT</span></div>
+      </section>
+    
+      <!-- Pricing section -->
+      <section class="pricing section container" id="pricing">
+        <div class="section-heading">
+          <div><p class="eyebrow">Simple by design <span>↘</span></p><h2>Choose your<br /><em>next move.</em></h2></div>
+          <p class="heading-note">No fluff. No mystery. Just the right level of firepower for where you are now.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card"><p class="plan">SPARK</p><p class="price">$4,500 <small>/ project</small></p><p class="price-desc">For teams with a big idea that needs a clear beginning.</p><hr /><ul><li>Brand positioning</li><li>Visual direction</li><li>2-week sprint</li></ul><a class="button button-outline" href="#contact">Get started <span>↗</span></a></article>
+          <article class="price-card popular"><span class="popular-label">Most popular</span><p class="plan">MOMENTUM</p><p class="price">$9,800 <small>/ project</small></p><p class="price-desc">For teams ready to turn clarity into a market advantage.</p><hr /><ul><li>Everything in Spark</li><li>Digital experience</li><li>4-week sprint</li></ul><a class="button button-dark" href="#contact">Get started <span>↗</span></a></article>
+          <article class="price-card"><p class="plan">MOTION</p><p class="price">Let's talk</p><p class="price-desc">For teams who want a long-term partner in their corner.</p><hr /><ul><li>Everything in Momentum</li><li>Growth systems</li><li>Ongoing partnership</li></ul><a class="button button-outline" href="#contact">Get started <span>↗</span></a></article>
+        </div>
+      </section>
 
-        <section class="pricing section-wrap" id="pricing">
-          <div class="section-heading centered"><p class="eyebrow"><span class="eyebrow-dot"></span> Simple, by design</p><h2>Plans that grow<br /><em>with you.</em></h2><p class="section-lead">Start small, dream big, and switch plans whenever you need to.</p></div>
-          <div class="pricing-grid">
-            <article class="price-card"><p class="plan-name">Solo</p><h3>For the self-starter.</h3><p class="price"><strong>$0</strong> / forever</p><a class="button button-outline" href="#cta">Get started <span>↗</span></a><ul><li>1 workspace</li><li>Unlimited projects</li><li>Core collaboration tools</li></ul></article>
-            <article class="price-card featured"><span class="popular">Most popular</span><p class="plan-name">Studio</p><h3>For teams in motion.</h3><p class="price"><strong>$12</strong> / user / month</p><a class="button button-dark" href="#cta">Start free trial <span>↗</span></a><ul><li>Unlimited workspaces</li><li>Advanced project views</li><li>Guest access & permissions</li><li>Priority support</li></ul></article>
-            <article class="price-card"><p class="plan-name">Scale</p><h3>For teams going further.</h3><p class="price"><strong>Let's talk</strong></p><a class="button button-outline" href="#cta">Contact us <span>↗</span></a><ul><li>Everything in Studio</li><li>Custom workflows</li><li>Dedicated success manager</li></ul></article>
-          </div>
-        </section>
+      <!-- FAQ section  -->
+      <section class="faq section container" id="faq">
+        <div class="section-heading"><div><p class="eyebrow">The fine print <span>↘</span></p><h2>Questions,<br /><em>answered.</em></h2></div></div>
+        <div class="faq-list">
+          <details open><summary>What does working with NOVA look like? <span>+</span></summary><p>We start with a focused conversation, align on the challenge, and build a plan around the outcome that matters most. You'll always know what we're doing and why.</p></details>
+          <details><summary>How long does a typical project take? <span>+</span></summary><p>Our focused sprints run from two to six weeks. Longer partnerships are shaped around your goals, team, and pace.</p></details>
+          <details><summary>Do you work with early-stage startups? <span>+</span></summary><p>Absolutely. We love helping teams create a strong foundation before they scale — and we tailor our approach to match your stage.</p></details>
+          <details><summary>What if I need something else? <span>+</span></summary><p>Tell us what you are working toward. If we are not the right fit, we will point you toward someone who is.</p></details>
+        </div>
+      </section>
 
-        <section class="faq section-wrap" id="faq">
-          <div class="faq-intro"><p class="eyebrow"><span class="eyebrow-dot"></span> Good to know</p><h2>Questions,<br /><em>answered.</em></h2><p>Can't find what you're looking for? <a href="mailto:hello@luma.work">Say hello →</a></p></div>
-          <div class="faq-list">
-            <div class="faq-item open"><button class="faq-question" type="button" aria-expanded="true"><span>What is Luma?</span><b>−</b></button><div class="faq-answer"><p>Luma is a connected workspace for modern teams. It brings projects, docs, conversations, and decisions together so your team can focus on the work that matters.</p></div></div>
-            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>How long is the free trial?</span><b>+</b></button><div class="faq-answer"><p>Every Studio workspace starts with a 14-day free trial. No credit card is needed, and you can invite your team from day one.</p></div></div>
-            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Can I change my plan later?</span><b>+</b></button><div class="faq-answer"><p>Absolutely. Upgrade, downgrade, or cancel at any time from your workspace settings. Changes take effect on your next billing cycle.</p></div></div>
-            <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Where does Luma work?</span><b>+</b></button><div class="faq-answer"><p>Luma works in your browser on any device. Native desktop and mobile apps are coming soon.</p></div></div>
-          </div>
-        </section>
+        <!-- Final CTA -->
+      <section class="final-cta container" id="contact">
+        <div><p class="eyebrow">Your move <span>↘</span></p><h2>Ready to make<br /><em>some noise?</em></h2><p>Tell us where you want to go. We'll help you find the way there.</p></div>
+        <a class="button button-light" href="mailto:hello@nova.studio">Start a conversation <span>↗</span></a>
+      </section>
+    </main>
 
-        <section class="cta section-wrap" id="cta"><div class="cta-inner"><div><p class="eyebrow"><span class="eyebrow-dot"></span> Your next chapter starts here</p><h2>Ready to make<br /><em>something great?</em></h2></div><a class="button button-dark" href="mailto:hello@luma.work">Start for free <span>↗</span></a><div class="cta-star">✦</div></div></section>
-      </main>
-
-      <footer class="site-footer section-wrap"><a class="brand" href="#"><span class="brand-mark">✦</span> luma</a><p>Tools for teams with something to say.</p><div class="footer-links"><a href="#product">Product</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#">Privacy</a></div><small>© 2024 Luma, Inc.</small></footer>
-    </div>
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">✦</span>NOVA</a><p>Strategy, design, and momentum<br />for what's next.</p><a class="back-top" href="#top">Back to top <span>↑</span></a></div>
+      <div class="footer-bottom"><span>© 2024 NOVA STUDIO</span><div><a href="#top">Instagram</a><a href="#top">LinkedIn</a><a href="mailto:hello@nova.studio">Email</a></div><span>Made for the bold.</span></div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
