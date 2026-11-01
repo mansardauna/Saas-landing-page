@@ -1,0 +1,7 @@
+6c6b727 Build modern responsive NOVA landing page
+ee749da Saas Landing page
+a4c1b54 Saas Luma landing page
+03172f3 Saas landing page
+9fb8088 Saas landing page
+42ef4de landing-page-for Saas
+9906150 first commit
